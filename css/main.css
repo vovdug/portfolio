@@ -306,4 +306,10 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+.container {
+  max-width: 1245px;
+  margin: 0 auto;
+  padding: 0 15px;
 }/*# sourceMappingURL=main.css.map */
