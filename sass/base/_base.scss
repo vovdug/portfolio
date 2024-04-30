@@ -1,3 +1,9 @@
+body {
+    background-color: $backgroundBody;
+    color: $textColor;
+    font-family: "Inconsolata", monospace;
+}
+
 .container {
     max-width: 1245px;
     margin: 0 auto;
