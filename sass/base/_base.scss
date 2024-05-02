@@ -2,6 +2,11 @@ body {
     background-color: $backgroundBody;
     color: $textColor;
     font-family: "Inconsolata", monospace;
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 .container {

@@ -313,6 +313,10 @@ body {
   color: #f0e3ca;
   font-family: "Inconsolata", monospace;
 }
+body * {
+  margin: 0;
+  padding: 0;
+}
 
 .container {
   max-width: 1245px;
@@ -351,4 +355,22 @@ body {
   font-weight: 700;
   text-transform: capitalize;
   text-decoration: none;
+}
+
+.hero {
+  max-width: 448px;
+}
+.hero__main-title {
+  color: #03c3ff;
+  font-size: 64px;
+  font-weight: 900;
+}
+.hero__subtitle {
+  font-size: 40px;
+  font-weight: 500;
+  margin: 14px 0;
+}
+.hero__discription {
+  font-size: 20px;
+  font-weight: 300;
 }/*# sourceMappingURL=main.css.map */
