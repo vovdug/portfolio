@@ -373,4 +373,42 @@ body * {
 .hero__discription {
   font-size: 20px;
   font-weight: 300;
+}
+
+.avatar {
+  width: 629px;
+  height: 575px;
+  background-image: url(../../img/Avatar_text.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+.avatar__rectangle {
+  border-radius: 29% 71% 64% 36%/30% 30% 70% 70%;
+  width: 373px;
+  height: 371px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.avatar__rectangle--foto {
+  overflow: hidden;
+  z-index: 3;
+}
+.avatar__rectangle--foto img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.avatar__rectangle--first {
+  background-color: #03c3ff;
+  opacity: 0.72;
+  transform: translate(-50%, -50%) rotate(-24deg);
+  z-index: 1;
+}
+.avatar__rectangle--second {
+  opacity: 0.72;
+  background-color: #f0e3ca;
+  transform: translate(-50%, -50%) rotate(30deg);
+  z-index: 2;
 }/*# sourceMappingURL=main.css.map */

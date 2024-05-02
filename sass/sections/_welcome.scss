@@ -23,3 +23,40 @@
         font-weight: 300;
     }
 }
+.avatar {
+    width: 629px;
+    height: 575px;
+    background-image: url(../../img/Avatar_text.png);
+    background-repeat: no-repeat;
+    position: relative;
+
+    &__rectangle {
+        border-radius: 29% 71% 64% 36% / 30% 30% 70% 70%;
+        width: 373px;
+        height: 371px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__rectangle--foto {
+        overflow: hidden;
+        z-index: 3;
+        img{
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+    &__rectangle--first {
+        background-color: $contextColor;
+        opacity: 0.72;
+        transform: translate(-50%, -50%) rotate(-24deg);
+        z-index: 1;
+    }
+    &__rectangle--second {
+        opacity: 0.72;
+        background-color: $textColor;
+        transform: translate(-50%, -50%) rotate(30deg);
+        z-index: 2;
+    }
+}
