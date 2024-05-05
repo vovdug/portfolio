@@ -4,7 +4,7 @@
         display: flex;
         justify-content: space-between ;
         align-items: center;
-        padding: 72.5px 0;
+        padding: 146px 0 72.5px ;
 }
 
 }
@@ -16,11 +16,12 @@
         color: $contextColor;
         font-size: 64px;
         font-weight: 900;
+        margin-bottom: 13px;
     }
     &__subtitle {
         font-size: 40px;
         font-weight: 500;
-        margin: 14px 0;
+        margin-bottom: 11px ;
     }
     &__discription {
         font-size: 20px;
