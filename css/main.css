@@ -365,6 +365,9 @@ body * {
   text-transform: capitalize;
   text-decoration: none;
 }
+.anchor-link:hover {
+  color: #03c3ff;
+}
 
 .welcome__content {
   display: flex;
