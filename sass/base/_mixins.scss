@@ -1,5 +1,17 @@
-@mixin hover_color($colorText)  {
+@mixin hover_color($colorText) {
     &:hover {
         color: $colorText;
+    }
+}
+@mixin hover_skill_card($color) {
+    &:hover {
+        svg {
+            fill: $color;
+        }
+        .card-skill__title{
+            color: $color;
+        }
+        box-shadow: 0 3px 8px $color;
+        transform: scale(1.05);
     }
 }
