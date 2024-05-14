@@ -557,4 +557,70 @@ body * {
   -o-object-fit: cover;
      object-fit: cover;
   fill: #f0e3ca;
+}
+
+.my-works {
+  padding: 64px 0;
+}
+.my-works .context-title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.list-projects {
+  list-style-type: none;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+.card-project {
+  width: 320px;
+  height: 320px;
+  overflow: hidden;
+  position: relative;
+}
+.card-project__about {
+  background-color: #21201d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40.5px 0;
+  position: absolute;
+  top: -100%;
+  width: 100%;
+  transition: 0.5s;
+}
+.card-project__about .context-title {
+  margin-bottom: 16px;
+}
+.card-project__main-info {
+  text-align: center;
+  width: 200px;
+  border-bottom: 1px solid #03c3ff;
+  padding-bottom: 16px;
+}
+.card-project__technologies {
+  font-weight: 500;
+}
+.card-project__discription {
+  width: 219px;
+  padding-top: 16px;
+}
+.card-project__text {
+  margin-bottom: 16px;
+}
+.card-project__wrapper-link {
+  text-align: center;
+}
+.card-project__link {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #32312e;
+  border-radius: 4px;
+  color: #f0e3ca;
+  font-family: "Inconsolata", monospace;
+  text-decoration: none;
+}
+.card-project:hover .card-project__about {
+  top: 0;
 }/*# sourceMappingURL=main.css.map */

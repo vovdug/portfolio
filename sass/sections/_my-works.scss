@@ -1,0 +1,75 @@
+.my-works {
+    padding: 64px 0;
+    &__content {
+    }
+    .context-title {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+}
+.list-projects {
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    &__item {
+    }
+}
+.card-project {
+    width: 320px;
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+
+    &__about {
+        background-color: $projectCardFill;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40.5px 0;
+        position: absolute;
+        top: -100%;
+        width: 100%;
+        transition: 0.5s;
+
+        .context-title {
+            margin-bottom: 16px;
+        }
+    }
+    &__main-info {
+        text-align: center;
+        width: 200px;
+        border-bottom: 1px solid $contextColor;
+        padding-bottom: 16px;
+    }
+    &__technologies {
+        font-weight: 500;
+    }
+    &__discription {
+        width: 219px;
+        padding-top: 16px;
+    }
+    &__text {
+        margin-bottom: 16px;
+    }
+    &__wrapper-link {
+        text-align: center;
+    }
+    &__link {
+        display: inline-block;
+        padding: 12px 20px;
+        background-color: $projectCardButton;
+        border-radius: 4px;
+        color: $textColor;
+        font-family: "Inconsolata", monospace;
+        text-decoration: none;
+    }
+    &__picture {
+    }
+    &:hover {
+        .card-project__about {
+            top: 0;
+        }
+    }
+}
+
