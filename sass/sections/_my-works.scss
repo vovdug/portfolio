@@ -63,6 +63,13 @@
         color: $textColor;
         font-family: "Inconsolata", monospace;
         text-decoration: none;
+        transition: 0.5s;
+        
+        @media (hover:hover) {
+            &:hover {
+                background-color: $contextColor;
+            }
+        }
     }
     &__picture {
     }

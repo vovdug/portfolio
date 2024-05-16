@@ -620,6 +620,12 @@ body * {
   color: #f0e3ca;
   font-family: "Inconsolata", monospace;
   text-decoration: none;
+  transition: 0.5s;
+}
+@media (hover: hover) {
+  .card-project__link:hover {
+    background-color: #03c3ff;
+  }
 }
 .card-project:hover .card-project__about {
   top: 0;
