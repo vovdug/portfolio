@@ -28,10 +28,10 @@
         align-items: center;
         padding: 40.5px 0;
         position: absolute;
-        top: -100%;
+        top: 0;
         width: 100%;
         transition: 0.5s;
-
+        transform: translateY(-100%);
         .context-title {
             margin-bottom: 16px;
         }
@@ -75,7 +75,7 @@
     }
     &:hover {
         .card-project__about {
-            top: 0;
+            transform: translateY(0);
         }
     }
 }

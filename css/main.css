@@ -332,7 +332,6 @@ body * {
 }
 
 .header {
-  position: fixed;
   width: 100%;
   z-index: 4;
   background-color: rgba(27, 26, 23, 0.7450980392);
@@ -342,7 +341,7 @@ body * {
 .header__content {
   display: flex;
   justify-content: space-between;
-  padding: 20.5px 0;
+  padding: 25.5px 0 20.5px;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
@@ -379,7 +378,7 @@ body * {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 146px 0 72.5px;
+  padding: 75.5px 0 72.5px;
 }
 
 .hero {
@@ -586,9 +585,10 @@ body * {
   align-items: center;
   padding: 40.5px 0;
   position: absolute;
-  top: -100%;
+  top: 0;
   width: 100%;
   transition: 0.5s;
+  transform: translateY(-100%);
 }
 .card-project__about .context-title {
   margin-bottom: 16px;
@@ -628,7 +628,7 @@ body * {
   }
 }
 .card-project:hover .card-project__about {
-  top: 0;
+  transform: translateY(0);
 }
 
 .footer {

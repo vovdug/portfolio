@@ -1,5 +1,5 @@
 .header {
-    position: fixed;
+    // position: fixed;
     width: 100%;
     z-index: 4;
     background-color: #1b1a17be;
@@ -7,7 +7,7 @@
     &__content {
         display: flex;
         justify-content: space-between;
-        padding: 20.5px 0;
+        padding: 25.5px 0 20.5px;
         align-items: center;
         max-width: 1200px ;
         margin: 0 auto;
