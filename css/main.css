@@ -629,4 +629,61 @@ body * {
 }
 .card-project:hover .card-project__about {
   top: 0;
+}
+
+.footer {
+  padding: 64px 0;
+}
+.footer__content {
+  display: flex;
+  -moz-column-gap: 64px;
+       column-gap: 64px;
+  justify-content: center;
+}
+.footer__discription {
+  max-width: 213px;
+  line-height: 1.1;
+}
+.footer__text {
+  font-size: 20px;
+}
+.footer__contacts {
+  max-width: 384px;
+}
+.footer .logo {
+  display: block;
+  width: 165px;
+  height: 44px;
+  margin-bottom: 16px;
+}
+.footer .logo img {
+  width: 100%;
+  height: 100%;
+}
+.footer .context-title {
+  margin-bottom: 16px;
+}
+
+.contacts-list {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.social-link {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  text-decoration: none;
+}
+.social-link__icons {
+  fill: #f0e3ca;
+  width: 32px;
+  height: 32px;
+}
+.social-link__title {
+  font-size: 24px;
+  color: #03c3ff;
+  font-family: "Inconsolata", monospace;
 }/*# sourceMappingURL=main.css.map */
