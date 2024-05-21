@@ -346,6 +346,13 @@ body * {
   max-width: 1200px;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .header__content {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20.5px 0 16.5px;
+  }
+}
 .header .logo img {
   max-width: 146px;
 }
