@@ -583,10 +583,11 @@ body * {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40.5px 0;
+  justify-content: center;
   position: absolute;
   top: 0;
   width: 100%;
+  height: 100%;
   transition: 0.5s;
   transform: translateY(-100%);
 }
@@ -620,6 +621,8 @@ body * {
   color: #f0e3ca;
   font-family: "Inconsolata", monospace;
   text-decoration: none;
+  font-size: 14px;
+  font-weight: 300;
   transition: 0.5s;
 }
 @media (hover: hover) {
