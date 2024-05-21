@@ -5,8 +5,13 @@
         justify-content: space-between ;
         align-items: center;
         padding: 75.5px 0 72.5px ;
-}
-
+        
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 64px;
+            padding: 128px 0;
+        }
+    }
 }
 
 .hero {
@@ -17,11 +22,20 @@
         font-size: 64px;
         font-weight: 900;
         margin-bottom: 13px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 3px;
+        }
+
     }
     &__subtitle {
         font-size: 40px;
         font-weight: 500;
         margin-bottom: 11px ;
+
+        @media (max-width: 768px) {
+            margin-bottom: 12px;
+        }
     }
     &__discription {
         font-size: 20px;

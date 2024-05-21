@@ -387,6 +387,13 @@ body * {
   align-items: center;
   padding: 75.5px 0 72.5px;
 }
+@media (max-width: 768px) {
+  .welcome__content {
+    flex-direction: column;
+    gap: 64px;
+    padding: 128px 0;
+  }
+}
 
 .hero {
   max-width: 448px;
@@ -397,10 +404,20 @@ body * {
   font-weight: 900;
   margin-bottom: 13px;
 }
+@media (max-width: 768px) {
+  .hero__main-title {
+    margin-bottom: 3px;
+  }
+}
 .hero__subtitle {
   font-size: 40px;
   font-weight: 500;
   margin-bottom: 11px;
+}
+@media (max-width: 768px) {
+  .hero__subtitle {
+    margin-bottom: 12px;
+  }
 }
 .hero__discription {
   font-size: 20px;
