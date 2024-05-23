@@ -493,9 +493,9 @@ body * {
 .list-skills {
   list-style: none;
   display: flex;
-  -moz-column-gap: 16px;
-       column-gap: 16px;
+  gap: 16px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card-skill {
