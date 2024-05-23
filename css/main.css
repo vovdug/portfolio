@@ -386,10 +386,11 @@ body * {
   justify-content: space-between;
   align-items: center;
   padding: 75.5px 0 72.5px;
+  flex-wrap: wrap;
 }
-@media (max-width: 768px) {
+@media (max-width: 1107px) {
   .welcome__content {
-    flex-direction: column;
+    justify-content: center;
     gap: 64px;
     padding: 128px 0;
   }

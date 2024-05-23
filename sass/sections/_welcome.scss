@@ -5,9 +5,10 @@
         justify-content: space-between ;
         align-items: center;
         padding: 75.5px 0 72.5px ;
+        flex-wrap: wrap;
         
-        @media (max-width: 768px) {
-            flex-direction: column;
+        @media (max-width: 1107px) {
+            justify-content: center;
             gap: 64px;
             padding: 128px 0;
         }
