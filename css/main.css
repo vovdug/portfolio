@@ -596,7 +596,9 @@ body * {
   display: flex;
   gap: 16px;
   justify-content: center;
+  flex-wrap: wrap;
 }
+
 .card-project {
   width: 320px;
   height: 320px;

@@ -1,5 +1,6 @@
 .my-works {
     padding: 64px 0;
+
     &__content {
     }
     .context-title {
@@ -12,8 +13,7 @@
     display: flex;
     gap: 16px;
     justify-content: center;
-    &__item {
-    }
+    flex-wrap: wrap;
 }
 .card-project {
     width: 320px;
