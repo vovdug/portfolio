@@ -666,12 +666,17 @@ body * {
 }
 .footer__content {
   display: flex;
-  -moz-column-gap: 64px;
-       column-gap: 64px;
+  gap: 64px;
   justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .footer__content {
+    flex-direction: column;
+  }
 }
 .footer__discription {
-  max-width: 213px;
+  max-width: 339px;
   line-height: 1.1;
 }
 .footer__text {
@@ -686,12 +691,23 @@ body * {
   height: 44px;
   margin-bottom: 16px;
 }
+@media (max-width: 768px) {
+  .footer .logo {
+    margin: 0 auto 16px;
+  }
+}
 .footer .logo img {
   width: 100%;
   height: 100%;
 }
 .footer .context-title {
   margin-bottom: 16px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .footer .context-title {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
 }
 
 .contacts-list {

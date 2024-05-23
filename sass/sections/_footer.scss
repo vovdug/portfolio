@@ -2,11 +2,16 @@
 padding: 64px 0;
     &__content {
         display: flex;
-        column-gap: 64px;
+        gap: 64px;
         justify-content: center;
+        align-items: center;
+        @media (max-width: 768px) {
+            flex-direction: column;
+        
+        }
     }
     &__discription {
-        max-width: 213px;
+        max-width: 339px;
         line-height: 1.1;
     }
     &__text {
@@ -20,6 +25,9 @@ padding: 64px 0;
         width: 165px;
         height: 44px;
         margin-bottom: 16px;
+        @media (max-width: 768px) {
+        margin: 0 auto 16px;
+        }
 
         img {
             width: 100%;
@@ -28,7 +36,10 @@ padding: 64px 0;
     }
     .context-title {
         margin-bottom: 16px;
-        
+        text-align: center;
+        @media (max-width: 768px) {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
     }
 }
 
