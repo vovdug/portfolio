@@ -18,6 +18,9 @@
             gap: 20px;
             padding: 20.5px 0 16.5px;
         }
+        @media (max-width: 660px) {
+            flex-direction: row;
+        }
     }
     
     .logo {
@@ -27,11 +30,15 @@
     }
 }
 .menu {
+    @media (max-width: 660px) {
+    display: none;
+
+    }
 }
 
 .menu__list-links {
     display: flex;
-    column-gap: 64px;
+    column-gap: 54px;
     margin: 0;
     padding: 0;
 }

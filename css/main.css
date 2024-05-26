@@ -353,14 +353,25 @@ body * {
     padding: 20.5px 0 16.5px;
   }
 }
+@media (max-width: 660px) {
+  .header__content {
+    flex-direction: row;
+  }
+}
 .header .logo img {
   max-width: 146px;
 }
 
+@media (max-width: 660px) {
+  .menu {
+    display: none;
+  }
+}
+
 .menu__list-links {
   display: flex;
-  -moz-column-gap: 64px;
-       column-gap: 64px;
+  -moz-column-gap: 54px;
+       column-gap: 54px;
   margin: 0;
   padding: 0;
 }
@@ -732,4 +743,16 @@ body * {
   font-size: 24px;
   color: #03c3ff;
   font-family: "Inconsolata", monospace;
+}
+
+.burger {
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+}
+@media (max-width: 660px) {
+  .burger {
+    display: block;
+  }
 }/*# sourceMappingURL=main.css.map */
