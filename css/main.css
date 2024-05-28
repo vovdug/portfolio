@@ -554,8 +554,12 @@ body * {
   display: flex;
   justify-content: center;
   align-items: center;
-  -moz-column-gap: 32px;
-       column-gap: 32px;
+  gap: 32px;
+}
+@media (max-width: 660px) {
+  .about-me__content {
+    flex-direction: column;
+  }
 }
 .about-me__logo {
   width: 100px;
@@ -565,6 +569,11 @@ body * {
   font-weight: 300;
   font-size: 24px;
   max-width: 904px;
+}
+@media (max-width: 443px) {
+  .about-me__discription {
+    font-size: 18px;
+  }
 }
 
 .my-skills {
