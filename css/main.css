@@ -478,6 +478,11 @@ body * {
     font-size: 24px;
   }
 }
+@media (max-width: 443px) {
+  .hero__discription {
+    font-size: 18px;
+  }
+}
 
 .avatar {
   width: 629px;
@@ -493,6 +498,12 @@ body * {
     background-image: url(../img/avatar_text_mobile.png);
   }
 }
+@media (max-width: 443px) {
+  .avatar {
+    width: 290px;
+    height: 307px;
+  }
+}
 .avatar__rectangle {
   border-radius: 29% 71% 64% 36%/30% 30% 70% 70%;
   width: 373px;
@@ -506,6 +517,12 @@ body * {
   .avatar__rectangle {
     width: 278px;
     height: 276px;
+  }
+}
+@media (max-width: 443px) {
+  .avatar__rectangle {
+    width: 215px;
+    height: 215px;
   }
 }
 .avatar__rectangle--foto {

@@ -60,6 +60,10 @@
         @media (max-width: 660px) {
             font-size: 24px;
         }
+
+        @media (max-width: 443px) {
+            font-size: 18px;
+        }
     }
 }
 .avatar {
@@ -75,6 +79,11 @@
         background-image: url(../img/avatar_text_mobile.png);
     }
 
+    @media (max-width: 443px) {
+        width: 290px;
+        height: 307px;
+    }
+
     &__rectangle {
         border-radius: 29% 71% 64% 36% / 30% 30% 70% 70%;
         width: 373px;
@@ -87,6 +96,11 @@
         @media (max-width: 660px) {
             width: 278px;
             height: 276px;
+        }
+
+        @media (max-width: 443px) {
+            width: 215px;
+            height: 215px;
         }
     }
     &__rectangle--foto {
