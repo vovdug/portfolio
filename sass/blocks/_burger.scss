@@ -1,15 +1,40 @@
 .burger {
     display: none;
-    width: 50px;
-    height: 50px;
-    background-color: white;
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
     z-index: 1;
-
+    border: none;
+    outline: none;
+    
     @media (max-width: 660px) {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &__line {
+        display: block;
+        width: 36px;
+        height: 4px;
+        background-color: $textColor;
+        position: relative;
+        
+        &::before, &::after {
+            content: "";
+            display: block;
+            width: 36px;
+            height: 4px;
+            background-color: $textColor;
+            position: absolute;
+        }
 
+        &::before {
+            top: -10px;
+        }
+
+        &::after {
+            top: 10px;
+        }
     }
 }

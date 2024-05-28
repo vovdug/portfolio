@@ -765,13 +765,38 @@ body * {
 
 .burger {
   display: none;
-  width: 50px;
-  height: 50px;
-  background-color: white;
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
   z-index: 1;
+  border: none;
+  outline: none;
 }
 @media (max-width: 660px) {
   .burger {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+}
+.burger__line {
+  display: block;
+  width: 36px;
+  height: 4px;
+  background-color: #f0e3ca;
+  position: relative;
+}
+.burger__line::before, .burger__line::after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 4px;
+  background-color: #f0e3ca;
+  position: absolute;
+}
+.burger__line::before {
+  top: -10px;
+}
+.burger__line::after {
+  top: 10px;
 }/*# sourceMappingURL=main.css.map */
