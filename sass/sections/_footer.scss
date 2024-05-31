@@ -50,6 +50,10 @@ padding: 64px 0;
     justify-content: space-between;
     flex-wrap: wrap;
 
+    @media (max-width: 660px) {
+        flex-direction: column;
+    }
+    
     &__item {
     }
 }

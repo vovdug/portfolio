@@ -885,6 +885,11 @@ body * {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+@media (max-width: 660px) {
+  .contacts-list {
+    flex-direction: column;
+  }
+}
 .social-link {
   display: flex;
   gap: 16px;
