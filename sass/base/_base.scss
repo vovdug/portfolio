@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: $backgroundBody;
     color: $textColor;
@@ -21,3 +25,4 @@ body {
     font-weight: 700;
     color: $contextColor;
 }
+

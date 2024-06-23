@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
     <link rel="icon" href="./img/icons/favicon.ico">
+    <script src="./js/mobile-menu.js" defer="defer"></script>
 </head>
 <body>
     <svg display = 'none'>
@@ -88,16 +89,16 @@
             <a href="" class="logo">
                 <img src="./img/icons/logo.svg" alt="logo">
             </a>
-            <nav class="menu"> 
+            <nav class="menu" id="menu"> 
                 <ul class="menu__list-links">
-                    <li class="menu__item"><a href="" class="anchor-link">about me</a></li>
-                    <li class="menu__item"><a href="" class="anchor-link">skills</a></li>
-                    <li class="menu__item"><a href="" class="anchor-link">projects</a></li>
-                    <li class="menu__item"><a href="" class="anchor-link">reviews</a></li>
-                    <li class="menu__item"><a href="" class="anchor-link">contacts</a></li>
+                    <li class="menu__item"><a href="#aboutMe" class="anchor-link">about me</a></li>
+                    <li class="menu__item"><a href="#mySkills" class="anchor-link">skills</a></li>
+                    <li class="menu__item"><a href="#myWorks" class="anchor-link">projects</a></li>
+                    <li class="menu__item"><a href="#reviews" class="anchor-link">reviews</a></li>
+                    <li class="menu__item"><a href="#contacts" class="anchor-link">contacts</a></li>
                 </ul>
             </nav>
-            <button class="burger">
+            <button class="burger" id="burger">
                 <span class="burger__line"></span>
             </button>
         </div>
@@ -128,7 +129,7 @@
             </div>
         </div>
     </section>
-    <section class="about-me">
+    <section class="about-me" id="aboutMe">
         <div class="container">
             <div class="about-me__content">
                 <div class="about-me__logo">
@@ -140,7 +141,7 @@
             </div>
         </div>
     </section>
-    <section class="my-skills">
+    <section class="my-skills" id="mySkills">
         <div class="container">
             <div class="my-skills__content">
                 <h6 class="context-title">
@@ -211,7 +212,7 @@
             </div>
         </div>
     </section>
-    <section class="my-works">
+    <section class="my-works" id="myWorks">
         <div class="container">
             <div class="my-works__content">
                 <h6 class="context-title">
@@ -298,7 +299,7 @@
         </div>
     </section>
 </main>
-<footer class="footer">
+<footer class="footer" id="contacts">
     <div class="container">
         <div class="footer__content">
             <div class="footer__discription">
