@@ -938,6 +938,7 @@ body * {
   height: 4px;
   background-color: #f0e3ca;
   position: relative;
+  transition: background-color 0.3s 0s;
 }
 .burger__line::before, .burger__line::after {
   content: "";
@@ -946,10 +947,26 @@ body * {
   height: 4px;
   background-color: #f0e3ca;
   position: absolute;
+  transition: transform 0.3s, top 0.3s 0.3s;
 }
 .burger__line::before {
   top: -10px;
 }
 .burger__line::after {
   top: 10px;
+}
+
+.burger.active .burger__line {
+  background-color: transparent;
+}
+.burger.active .burger__line::before, .burger.active .burger__line::after {
+  transition: top 0.3s, transform 0.3s 0.3s;
+}
+.burger.active .burger__line::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+.burger.active .burger__line::after {
+  top: 0;
+  transform: rotate(-45deg);
 }/*# sourceMappingURL=main.css.map */

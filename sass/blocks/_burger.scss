@@ -19,6 +19,7 @@
         height: 4px;
         background-color: $textColor;
         position: relative;
+        transition: background-color 0.3s 0s;
         
         &::before, &::after {
             content: "";
@@ -27,6 +28,7 @@
             height: 4px;
             background-color: $textColor;
             position: absolute;
+            transition: transform 0.3s, top 0.3s 0.3s;
         }
 
         &::before {
@@ -38,3 +40,22 @@
         }
     }
 }
+.burger.active {
+    .burger__line {
+        background-color: transparent;
+
+        &::before,&::after {
+            transition: top 0.3s, transform 0.3s 0.3s;
+        }
+
+        &::before {
+            top: 0;
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            top: 0;
+            transform: rotate(-45deg);
+        }
+    }
+} 
