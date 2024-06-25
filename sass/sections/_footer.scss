@@ -1,13 +1,15 @@
 .footer {
-padding: 64px 0;
     &__content {
+        padding: 64px 0;
         display: flex;
         gap: 64px;
         justify-content: center;
         align-items: center;
         @media (max-width: 768px) {
             flex-direction: column;
-        
+        }
+        @media (max-width: 660px) {
+            padding: 35px 0;
         }
     }
     &__discription {

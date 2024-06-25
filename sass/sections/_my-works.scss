@@ -1,7 +1,10 @@
 .my-works {
-    padding: 64px 0;
-
+    
     &__content {
+        padding: 64px 0;
+        @media (max-width: 660px) {
+            padding: 35px 0;
+        }
     }
     .context-title {
         text-align: center;
