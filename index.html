@@ -10,6 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
     <link rel="icon" href="./img/icons/favicon.ico">
     <script src="./js/mobile-menu.js" defer="defer"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" defer="defer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer="defer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer="defer"></script>
+    <script src="./js/gsap-animation.js" defer="defer"></script>
 </head>
 <body>
     <svg display = 'none'>
@@ -91,11 +95,11 @@
             </a>
             <nav class="menu" id="menu"> 
                 <ul class="menu__list-links">
-                    <li class="menu__item"><a href="#aboutMe" class="anchor-link">about me</a></li>
-                    <li class="menu__item"><a href="#mySkills" class="anchor-link">skills</a></li>
-                    <li class="menu__item"><a href="#myWorks" class="anchor-link">projects</a></li>
-                    <li class="menu__item"><a href="#reviews" class="anchor-link">reviews</a></li>
-                    <li class="menu__item"><a href="#contacts" class="anchor-link">contacts</a></li>
+                    <li class="menu__item" id="menuItemAboutMe"><a href="#aboutMe" class="anchor-link">about me</a></li>
+                    <li class="menu__item" id="menuItemMySkills"><a href="#mySkills" class="anchor-link">skills</a></li>
+                    <li class="menu__item" id="menuItemMyWorks"><a href="#myWorks" class="anchor-link">projects</a></li>
+                    <li class="menu__item" id="menuItemReviews"><a href="#reviews" class="anchor-link">reviews</a></li>
+                    <li class="menu__item" id="menuItemMyContacts"><a href="#contacts" class="anchor-link">contacts</a></li>
                 </ul>
             </nav>
             <button class="burger" id="burger">
@@ -105,10 +109,10 @@
     </div>
 </header>
 <main>
-    <section class="welcome">
+    <section class="welcome" id="welcome">
         <div class="container">
             <div class="welcome__content">
-                <article class="hero">
+                <article class="hero" id="hero">
                     <h1 class="hero__main-title">
                         Alexey Borisov
                     </h1>
@@ -120,11 +124,11 @@
                     </p>
                 </article>
                 <article class="avatar">
-                    <div class="avatar__rectangle avatar__rectangle--foto">
+                    <div class="avatar__rectangle avatar__rectangle--foto" id="picture-avatar-photo">
                         <img src="./img/avatar_foto.jpg" alt="">
                     </div>
-                    <div class="avatar__rectangle avatar__rectangle--first"></div>
-                    <div class="avatar__rectangle avatar__rectangle--second"></div>
+                    <div class="avatar__rectangle avatar__rectangle--first" id="picture-avatar-one"></div>
+                    <div class="avatar__rectangle avatar__rectangle--second" id="picture-avatar-two"></div>
                 </article>
             </div>
         </div>
@@ -144,12 +148,12 @@
     <section class="my-skills" id="mySkills">
         <div class="container">
             <div class="my-skills__content">
-                <h6 class="context-title">
+                <h6 class="context-title" id="mySkillsTitle">
                     My Skills
                 </h6>
                 <ul class="list-skills">
                     <li class="list-skills__item">
-                        <button class="card-skill card-skill--html">
+                        <button class="card-skill card-skill--html" data-card-skill>
                             <span class="card-skill__img">
                                 <svg class="card-skill__img-inside">
                                     <use xlink:href = "#html_icon"></use>
@@ -161,7 +165,7 @@
                         </button>
                     </li>
                     <li class="list-skills__item">
-                        <button class="card-skill card-skill--css">
+                        <button class="card-skill card-skill--css" data-card-skill>
                             <span class="card-skill__img">
                                 <svg class="card-skill__img-inside">
                                     <use xlink:href = "#css_icon"></use>
@@ -173,7 +177,7 @@
                         </button>
                     </li>
                     <li class="list-skills__item">
-                        <button class="card-skill card-skill--js">
+                        <button class="card-skill card-skill--js" data-card-skill>
                             <span class="card-skill__img">
                                 <svg class="card-skill__img-inside">
                                     <use xlink:href = "#js_icon"></use>
@@ -185,7 +189,7 @@
                         </button>
                     </li>
                     <li class="list-skills__item">
-                        <button class="card-skill card-skill--scss">
+                        <button class="card-skill card-skill--scss" data-card-skill>
                             <span class="card-skill__img">
                                 <svg class="card-skill__img-inside">
                                     <use xlink:href = "#scss_icon"></use>
@@ -197,7 +201,7 @@
                         </button>
                     </li>
                     <li class="list-skills__item">
-                        <button class="card-skill card-skill--git">
+                        <button class="card-skill card-skill--git" data-card-skill>
                             <span class="card-skill__img">
                                 <svg class="card-skill__img-inside">
                                     <use xlink:href = "#git_icon"></use>
@@ -215,12 +219,12 @@
     <section class="my-works" id="myWorks">
         <div class="container">
             <div class="my-works__content">
-                <h6 class="context-title">
+                <h6 class="context-title" id="myWorksTitle">
                     My Works
                 </h6>
                 <ul class="list-projects">
                     <li class="list-projects__item">
-                        <article class="card-project">
+                        <article class="card-project" data-card-project>
                             <img src="./img/card_portfolio.png" alt="" class="card-project__picture">
                             <div class="card-project__about">
                                 <div class="card-project__main-info">
@@ -245,7 +249,7 @@
                         </article>
                     </li>
                     <li class="list-projects__item">
-                        <article class="card-project">
+                        <article class="card-project" data-card-project>
                             <img src="./img/card_portfolio.png" alt="" class="card-project__picture">
                             <div class="card-project__about">
                                 <div class="card-project__main-info">
@@ -270,7 +274,7 @@
                         </article>
                     </li>
                     <li class="list-projects__item">
-                        <article class="card-project">
+                        <article class="card-project" data-card-project>
                             <img src="./img/card_portfolio.png" alt="" class="card-project__picture">
                             <div class="card-project__about">
                                 <div class="card-project__main-info">

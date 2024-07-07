@@ -322,6 +322,9 @@ body * {
   padding: 0;
   box-sizing: border-box;
 }
+body section {
+  overflow: hidden;
+}
 
 .container {
   max-width: 1245px;
@@ -419,6 +422,9 @@ body * {
   color: #03c3ff;
 }
 
+.welcome {
+  overflow: hidden;
+}
 .welcome__content {
   display: flex;
   justify-content: space-between;
